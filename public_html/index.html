@@ -15,7 +15,7 @@ and open the template in the editor.
         
         
     </head>
-    <body>
+    <body  class="exp">
         <nav class="navbar navbar-inverse navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -42,6 +42,13 @@ and open the template in the editor.
                          <h2>Flat 40% OFF on premium brands</h2>
                     <li><a href="products.html" class="btn btn-danger btn-lg active">Shop Now</a></li>
                 </div>
+                <center> <button style="background: black">  <a href="#" class="btn" style="color:white" >
+                <span></span>
+                <span></span>
+                <span></span>
+		            DARK MODE
+                </a></button>
+                  </center>
             </div>
         </div>
         <footer class="footer">
@@ -52,4 +59,11 @@ and open the template in the editor.
             </div>
         </footer>
     </body>
+<script>
+	document.querySelector('.btn').addEventListener('click',function()     
+	{
+    	document.querySelector('.exp').style.background='var(--bg-color)';
+   		document.querySelector('.intro-section spad').style.background='var(--bg-color)';  
+	});
+</script>
 </html>
